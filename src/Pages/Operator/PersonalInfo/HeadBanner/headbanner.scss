@@ -1,0 +1,221 @@
+.boss__card {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 16px 20px;
+    gap: 20px;
+
+    max-width: 930px;
+    min-height: 104px;
+
+    background: var(--backgroung-general);
+    border-radius: 16px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: var(--color-text-general);
+
+    @media (max-width: 1199px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 767px) {
+        flex-direction: row;
+    }
+
+}
+
+.boss_name__title {
+    width: 279px;
+}
+
+.boss_name__card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+    padding: 0;
+    gap: 4px;
+
+    max-width: 280px;
+    min-height: 42px;
+
+}
+
+
+.head_banner__container {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 54px 30px 44px;
+    gap: 36px;
+
+    position: relative;
+
+    min-height: 164px;
+
+    background: var(--background-headbanner);
+    color: var(--color-text-general);
+
+    @media (max-width: 767px) {
+        //padding: 20px;
+        flex-direction: column;
+    }
+
+}
+
+.contacts__card {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 0;
+    gap: 8px;
+
+
+    width: 249px;
+    max-height: 72px;
+
+
+}
+
+.job__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    letter-spacing: 0.2px;
+
+    color: #99A2AD;
+
+}
+
+.info__cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+
+    padding: 0 16px;
+    gap: 8px;
+
+    width: 249px;
+    min-height: 32px;
+
+    background: var(--background-headbanner-infocell);
+
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+
+    letter-spacing: 0.2px;
+
+    color: var(--color-text-contacts);
+    border-radius: 10px;
+
+}
+
+.icon {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 0;
+    width: 20px;
+    height: 32px;
+}
+
+img {
+    position: relative;
+    padding: 0;
+    margin: auto 0;
+}
+
+.manager__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+
+    min-height: 58px;
+
+    @media (max-width: 767px) {
+        padding: 0 20px;
+    }
+}
+
+.manager_name__card {
+
+    min-height: 28px;
+    padding: 0 30px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: var(--color-text-general);
+    @media (max-width: 990px) {
+        padding: 0;
+    }
+}
+
+.manager_phone__card {
+    max-width: 432px;
+    max-height: 22px;
+    padding: 0 30px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+
+    color: var(--color-text-phone);
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    @media (max-width: 990px) {
+        padding: 0;
+    }
+}
+
+.back__button {
+    position: absolute;
+    height: 28px;
+
+    margin-left: -36px;
+    margin-top: -110px;
+
+    cursor: pointer;
+    @media (min-width: 1200px) {
+        margin-top: -60px;
+    }
+    @media (max-width: 1199px) {
+        margin-top: -120px;
+    }
+    @media (max-width: 767px) {
+        margin-top: -60px;
+        margin-left: -40px;
+    }
+}

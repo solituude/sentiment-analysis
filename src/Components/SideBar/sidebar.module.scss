@@ -1,0 +1,146 @@
+img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+    height: 16px;
+    flex: none;
+    flex-grow: 0;
+}
+
+.container {
+    align-content: flex-start;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 4px 10px 4px;
+    gap: 4px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+
+    @media (max-width: 767px) {
+        flex-direction: row;
+        padding: 0;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+.tab_disable {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 16px;
+    min-height: 38px;
+    gap: 10px;
+    border-radius: 8px;
+    align-self: stretch;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: var(--color-text-general);
+
+    text-decoration: none;
+
+    @media (max-width: 991px) {
+        font-size: 0;
+        align-content: center;
+        justify-content: center;
+        gap: 0;
+        margin: 6px 0;
+    }
+}
+
+
+.tab_disable:hover {
+    background: var(--background-sidebar-tab-hover);
+}
+
+.tab_active {
+    @extend .tab_disable;
+    background: var(--background-sidebar-tab);
+    color: var(--color-text-general);
+}
+
+
+a:hover{
+    text-decoration: none;
+}
+
+.toggle__theme {
+    display: flex;
+    position: relative;
+    padding: 10px 20px 30px 10px;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--color-text-general);
+    cursor: default;
+    align-items: center;
+    order: 0;
+    @media (max-width: 768px) {
+        order: 1;
+    }
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    @media (max-width: 767px) {
+        flex-direction: row;
+        width: 100%;
+        padding: 10px 0;
+        height: 100%;
+        position: relative;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+}
+
+.container_hide {
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.hide__button {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    color: #969a9f;
+    border: none;
+    background: none;
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+
+.mini__container {
+    position: fixed;
+    border-radius: 8px;
+    top: 200px;
+    left: 0;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 300px;
+    height: 146px;
+    background: var(--background-sidebar);
+    box-shadow: 0 18px 19px 0 rgba(0, 0, 0, 0.15);
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}

@@ -1,0 +1,14 @@
+.chart_area__content {
+    position: relative;
+    box-sizing: border-box;
+    margin: 44px 54px;
+    padding: 48px 52px;
+    gap: 10px;
+    height: 660px;
+    max-width: 846px;
+    background: var(--background-chartarea);
+
+    border: 1px solid var(--color-border-chartarea);
+    border-radius: 12px;
+
+}

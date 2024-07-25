@@ -1,0 +1,249 @@
+.content {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    
+    /* background: #EBEDF0; */
+    background: var(--backgroung-auth);
+
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons_container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 16px 36px;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 360px;
+    height: 144px;
+
+    flex: none;
+    order: 5;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+.btn_entrance {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 4px;
+
+    width: 100%;
+    max-width: 328px;
+    height: 36px;
+
+    background: #735CE6;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: none;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+
+}
+
+.btn_entrance:hover {
+    cursor: pointer;
+}
+
+.btn_signup{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 4px;
+
+    width: 100%;
+    max-width: 328px;
+    height: 36px;
+
+    border: 1px solid var(--color-border-auth-signup);
+    border-radius: 8px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    /* color: #000000; */
+    color: var(--color-text-general);
+
+    text-decoration: none;
+    /* background-color: var(--color-auth-signup); */
+}
+
+.btn_signup:hover {
+    cursor: pointer;
+}
+
+.container_checkbox {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 16px;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 360px;
+    height: 36px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+    color: var(--color-text-general);
+
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+
+.custom_checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+.custom_checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.custom_checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-grow: 0;
+    border: 1px solid #735CE6;
+    border-radius: 6px;
+    margin-right: 14px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.custom_checkbox:checked+label::before {
+    border-color: #735CE6;
+    background-image: url('../../../assets/img/settings/check.svg');
+    width: 16px;
+    height: 16px;
+}
+
+
+.heading {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 16px 16px;
+    gap: 10px;
+
+    width: 100%;
+    height: 80px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+
+
+    text-align: center;
+
+
+    /* color: #000000; */
+    color: var(--color-text-general);
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+
+.main_block_auth {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 16px;
+
+    position: relative;
+    width: 100%;
+    max-width: 392px;
+    margin: auto;
+
+    /* background: #FFFFFF; */
+    background: var(--backgroung-auth-block);
+    
+    border-radius: 12px;
+
+}
+
+.password_recovery_link {
+    text-decoration: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 10px;
+
+    width: 100%;
+    max-width: 360px;
+    height: 52px;
+
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+
+    letter-spacing: -0.007em;
+}
+
+.password_recovery_link:hover {
+    cursor: pointer;
+}
+

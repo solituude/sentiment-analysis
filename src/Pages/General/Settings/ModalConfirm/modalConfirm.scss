@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@500&display=swap');
+.modalConfirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalConfirm__items {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.modalConfirm__container {
+  width: 376px;
+  height: 240px;
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalConfirm__closeButton {
+  display: flex;
+  justify-self: flex-start;
+  height: 28px;
+  border-radius: 21px;
+  background: rgba(0, 0, 0, 0.35);
+  border: none;
+  margin: 10px;
+}
+
+.modalConfirm__header {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 8px;
+  cursor: default;
+}
+
+.modalConfirm__info {
+  color: #6D7885;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.052px;
+  margin-bottom: 16px;
+  cursor: default;
+}
+
+.modalConfirm__forget {
+  display: flex;
+  padding: 9px 4px;
+
+  align-items: center;
+  gap: 2px;
+  color: #2688EB;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.052px;
+  cursor: pointer;
+}
+
+.modalConfirm__groupButton {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.modalConfirm__cancelButton {
+  display: flex;
+  width: 84px;
+  height: 36px;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border: none;
+
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.04);
+
+  color: #2688EB;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.15px;
+}
+
+.modalConfirm__continueButton_disable{
+  display: flex;
+  height: 36px;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  border-radius: 8px;
+  border: none;
+  opacity: 0.6399999856948853;
+  background: #2688EB;
+
+  color: #fff;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.15px;
+}
+
+.modalConfirm__continueButton_active{
+  @extend .modalConfirm__continueButton_disable;
+  opacity: 1;
+}

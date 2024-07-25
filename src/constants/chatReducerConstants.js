@@ -1,0 +1,8 @@
+export const SET_CLIENT_ID = 'SET_CLIENT_ID';
+export const ADD_MESSAGE = 'ADD_MESSAGE';
+export const SET_CLIENT_INFO = 'SET_CLIENT_INFO';
+export const SET_DIALOG_STATUS = 'SET_DIALOG_STATUS';
+export const SET_SOCKET = 'SET_SOCKET';
+export const RESET_CHAT_STATE = 'RESET_CHAT_STATE';
+export const SET_IS_FETCHING = 'SET_IS_FETCHING';
+export const SET_LIST_OF_CLIENTS = 'SET_LIST_OF_CLIENTS';

@@ -1,0 +1,141 @@
+.chats_content__mobile::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chats_content__mobile::-webkit-scrollbar-thumb {
+    background-color: #818C99;
+    border-radius: 20px;
+    height: 10px;
+}
+.chats_content__mobile {
+    height: 100vh;
+    padding-top: 40px;
+    color: var(--color-text-general);
+}
+
+.user__element__mobile {
+    display: flex;
+    flex-direction: row;
+    padding: 0 16px;
+    align-items: center;
+
+    width: 100%;
+    height: 56px;
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+
+    justify-content: space-between;
+}
+
+.user__element__mobile>div:nth-child(3) {
+    margin-left: auto;
+}
+
+.user__element__mobile:hover {
+    background-color: var(--background-sidebar-tab-hover);
+}
+
+.user__icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 24px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+}
+
+.initials {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.user__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6px;
+}
+
+.user__name {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+
+    letter-spacing: -0.01em;
+
+    color: #ffffff;
+
+}
+
+.user__name__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+
+    letter-spacing: -0.01em;
+    color: var(--color-text-general);
+
+}
+
+.user__tonality {
+    height: 16px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+    letter-spacing: 0.2px;
+
+    color: #818C99;
+}
+
+.user__activity {
+    width: 42px;
+    height: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+
+    text-align: right;
+    letter-spacing: -0.01em;
+
+    color: #818C99;
+}
+
+.input__search {
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 90%;
+    height: 32px;
+    background-color: var(--color-border);
+    border-radius: 8px;
+    color: var(--color-text-general)
+}
+
+.users__container__mobile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-right: 15px;
+}

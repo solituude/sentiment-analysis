@@ -1,0 +1,66 @@
+.content {
+  margin: 0 -10px;
+}
+
+.col {
+  padding: 0 !important;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  gap: 16px;
+  margin: 0 10px;
+  height: 136px;
+  padding: 0 24px;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(139, 116, 255, 0.01);
+  box-shadow: 0 0 64px 26px rgba(139, 116, 255, 0.36) inset;
+
+  &__label {
+    display: flex;
+    margin: 0;
+    color: var(--color-text-general);
+    cursor: default;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px;
+    font-weight: 400;
+    height: 20px;
+    align-items: center;
+
+    @media (max-width: 1315px) {
+      height: 40px;
+    }
+
+    @media (max-width: 692px) {
+      height: 60px;
+    }
+
+  }
+
+  &__number {
+    display: flex;
+    margin: 0;
+    cursor: default;
+    color: var(--color-text-general);
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  &__icon {
+    width: 102px;
+    height: 102px;
+    position: absolute;
+    right: -0.333px;
+    bottom: -10px;
+  }
+}

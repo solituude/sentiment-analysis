@@ -1,0 +1,228 @@
+.content {
+    background: var(--backgroung-general);
+}
+
+.main__column {
+    box-sizing: border-box;
+    min-height: 100vh;
+    max-height: 100%;
+}
+
+
+.sidebar {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    bottom: 0;
+    position: sticky;
+    margin-bottom: 0;
+    background-color: var(--background-sidebar);
+    z-index: 3;
+}
+
+.expand__sidebar {
+    display: inline-flex;
+    top: 10px;
+    margin: 10px;
+    position: absolute;
+    width: 50px !important;
+    background: none;
+    border: none;
+    z-index: 2;
+    color: var(--color-text-general);
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+body::-webkit-scrollbar {
+    /*width: 12px;*/
+    display: none;
+    /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--background-scroll);
+    /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-scroll);
+    /* цвет плашки */
+}
+
+:root[data-theme="light"] {
+
+    /* ---- Общие  ---- */
+
+    --backgroung-general: #ffffff;
+    --color-text-general: black;
+    --color-text-reverse: #fff;
+    --color-scroll: #d3d1cb;
+    --background-scroll: #edece9;
+    --stroke-separator-primary: #D7D8D9;
+    --stroke-separator-secondary: #E1E3E6;
+    --background-secondary: #F5F5F5;
+    --background-modal: #fff;
+    --background-accent-themed: #2688EB;
+    --text-tertiary: #99A2AD;
+    --background-field-background: #F2F3F5;
+    --text-secondary: #76787A;
+
+
+    /* ---- Авторизация ---- */
+    --backgroung-auth: #EBEDF0;
+    --backgroung-auth-block: #fff;
+    --color-auth-textarea: #F2F3F5;
+    --color-auth-text: #818C99;
+    --color-auth-subhead: #6D7885;
+    --color-border-auth-signup: #0000001F;
+
+
+    /* ----- Сайдбар ----- */
+
+    --background-sidebar: #FFFFFF;
+    --background-sidebar-tab: rgba(0, 0, 0, 0.08);
+    --background-sidebar-tab-hover: rgba(0, 0, 0, 0.05);
+
+
+    /* ---- Данные оператора ---- */
+
+    --background-headbanner: #F3F1FF;
+    --background-headbanner-infocell: #ffffff;
+    --color-text-phone: #969A9F;
+    --color-text-contacts: #2D81E0;
+    --color-scroll-down: #ebebeb;
+
+
+    /* ---- График тональности ---- */
+
+    --background-chartarea: #F5F5F5;
+    --color-border-chartarea: #D7D8D9;
+    --background-selected-button: #FFFFFF;
+    --color-button: #000000;
+
+
+    /* ---- Иконки ---- */
+
+    --color-icon: #2C2D2E;
+
+
+    /* ----- Чаты ----- */
+
+    --background-chats: #EBEDF0;
+    --color-border-form: gainsboro;
+    --color-border: rgba(0, 0, 0, 0.12);
+
+    /* ----- Страница менеджера ----- */
+    --background-calendar: rgba(0, 0, 0, 0.04);
+    --background-timefilter: #F5F5F5;
+    --color-timefilter-active: #fff;
+    --shadow-content-filter: rgba(0, 0, 0, 0.08);
+    --text-content-filter: #2688EB;
+    --background-info-col: #DED8FF;
+
+    --color-nps-button: rgba(0, 0, 0, 0.04);
+
+    /*    ----- settings -----*/
+    --background-settings: #F5F5F5;
+
+    /* ----- calendar ----- */
+    --calendar-text-color: black;
+    --calendar-range-color: #f5f5f5;
+    --calendar-button-background: #f5f5f5;
+
+}
+
+:root[data-theme="dark"] {
+
+    /* ---- Общие  ---- */
+
+    --backgroung-general: #19191A;
+    --color-text-general: #E1E3E6;
+
+    --color-text-reverse: #000;
+
+    --color-scroll: #303234;
+    --background-scroll: #19191A;
+    --stroke-separator-primary: #363738;
+    --stroke-separator-secondary: #363738;
+
+    --background-secondary: #232324;
+    --background-modal: #2D2D2E;
+    --background-accent-themed: #fff;
+    --text-tertiary: #636567;
+
+    --background-field-background: #292929;
+    --text-secondary: #76787A;
+
+
+    /* ---- Авторизация ---- */
+
+    --backgroung-auth: #19191A;
+    --backgroung-auth-block: #FFFFFF1F;
+    --color-auth-textarea: #ffffff1a;
+    --color-auth-text: #fff;
+    --color-auth-subhead: #D7D8D9;
+    --color-border-auth-signup: rgba(255, 255, 255, 0.1);
+
+
+    /* ----- Сайдбар ----- */
+
+    --background-sidebar: #232324;
+    --background-sidebar-tab: rgba(255, 255, 255, 0.1);
+    --background-sidebar-tab-hover: rgba(255, 255, 255, 0.03);
+
+
+    /* ---- Данные оператора ---- */
+
+    --background-headbanner: #202021;
+    --background-headbanner-infocell: #232324;
+    --color-text-phone: #969A9F;
+    --color-text-contacts: #529EF4;
+    --color-scroll-down: #39393a;
+
+
+
+    /* ---- График тональности ---- */
+
+    --background-chartarea: #232324;
+    --color-border-chartarea: #363738;
+    --background-selected-button: #626364;
+    --color-button: #FFFFFF;
+
+
+    /* ---- Иконки ---- */
+
+    --color-icon: #E1E3E6;
+
+
+    /* ----- Чаты ----- */
+
+    --background-chats: #0A0A0A;
+    --color-border-form: rgba(255, 255, 255, 0.1);
+    --color-border: #363738;
+
+    /* ----- Страница менеджера ----- */
+    --background-calendar: rgba(255, 255, 255, 0.10);
+    --background-timefilter: #232324;
+    --color-timefilter-active: #626364;
+    --shadow-content-filter: rgba(0, 0, 0, 0.30);
+    --text-content-filter: #E1E3E6;
+    --background-info-col: #232324;
+
+    --color-nps-button: rgba(255, 255, 255, 0.10);
+
+    /*    ----- settings -----*/
+    --background-settings: #202021;
+
+    /* ----- calendar ----- */
+    --calendar-text-color: #E1E3E6;
+    --calendar-range-color: #39393a;
+    --calendar-button-background: #303031;
+
+}
+
+
+/* ROST */
+/* ROST */
+/* ROST */
